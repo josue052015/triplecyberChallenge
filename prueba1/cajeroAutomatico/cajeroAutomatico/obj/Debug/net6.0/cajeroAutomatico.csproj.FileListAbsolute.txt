@@ -1,0 +1,15 @@
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\bin\Debug\net6.0\cajeroAutomatico.exe
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\bin\Debug\net6.0\cajeroAutomatico.deps.json
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\bin\Debug\net6.0\cajeroAutomatico.runtimeconfig.json
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\bin\Debug\net6.0\cajeroAutomatico.dll
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\bin\Debug\net6.0\cajeroAutomatico.pdb
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.csproj.AssemblyReference.cache
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.GeneratedMSBuildEditorConfig.editorconfig
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.AssemblyInfoInputs.cache
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.AssemblyInfo.cs
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.csproj.CoreCompileInputs.cache
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.dll
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\refint\cajeroAutomatico.dll
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.pdb
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\cajeroAutomatico.genruntimeconfig.cache
+J:\challenges\triplecyberChallenge\prueba1\cajeroAutomatico\cajeroAutomatico\obj\Debug\net6.0\ref\cajeroAutomatico.dll
