@@ -1,0 +1,15 @@
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\bin\Debug\net6.0\valoresAleatorios.exe
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\bin\Debug\net6.0\valoresAleatorios.deps.json
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\bin\Debug\net6.0\valoresAleatorios.runtimeconfig.json
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\bin\Debug\net6.0\valoresAleatorios.dll
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\bin\Debug\net6.0\valoresAleatorios.pdb
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.csproj.AssemblyReference.cache
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.GeneratedMSBuildEditorConfig.editorconfig
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.AssemblyInfoInputs.cache
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.AssemblyInfo.cs
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.csproj.CoreCompileInputs.cache
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.dll
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\refint\valoresAleatorios.dll
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.pdb
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\valoresAleatorios.genruntimeconfig.cache
+J:\challenges\triplecyberChallenge\prueba1\valores aleatorios\valoresAleatorios\valoresAleatorios\obj\Debug\net6.0\ref\valoresAleatorios.dll
