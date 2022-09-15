@@ -3,27 +3,21 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import useStyles from './styles'
+import { useNavigate } from "react-router-dom";
+import InfoIcon from '@mui/icons-material/Info';
 
 
+const CardComponent = ({ data, filterFavorites }) => {
 
-const CardComponent = ({ data }) => {
+  const navigate = useNavigate();
 
   const classes = useStyles();
 
-  const [, updateState] = React.useState();
-  const forceUpdate = React.useCallback(() => updateState({}), []);
+  const [isFavorite, setIsFavorite] = useState(data.isFavorite ? true : false);
 
-  let FavoriteIconUI = () => (
-    <>
-      <IconButton aria-label='Add To Favorite' onClick={() => changeFavoriteStatus()}>
-        <StarBorderIcon />
-      </IconButton>
-    </>
-  )
+  /* const [, updateState] = React.useState();
+  const forceUpdate = React.useCallback(() => updateState({}), []); */
 
-  useEffect(() => {
-    console.log("data c")
-  }, [data])
 
   const changeFavoriteStatus = () => {
 
@@ -31,45 +25,77 @@ const CardComponent = ({ data }) => {
 
     else data.isFavorite = true;
 
-    forceUpdate()
+    setIsFavorite(!isFavorite)
 
-    FavoriteIconUI = () => (
-      <>
-        <IconButton aria-label='Add To Favorite' >
-          <StarIcon />
-        </IconButton>
-      </>
-    )
+    filterFavorites(data)
 
+    // forceUpdate()
+
+  }
+
+  const goToMovieDetail = () => {
+
+    navigate(`/movieDetails/${data.id}`)
 
   }
 
   return (
     <>
-      <Card className={classes.root}>
+
+      <Card className={classes.root} >
+
+        <div style={{ "paddingBottom": "5px" }} />
 
         <Typography variant="h5" component="div">
           {data.title}
         </Typography>
-        {/* <CardMedia className={classes.media}  title={data.title} /> */}
+
         <CardContent>
+
           <div className={classes.CardContent}>
 
             <Typography variant='h5' gutterBottom>
               {data.vote_average} / 10
             </Typography>
 
-
           </div>
+
         </CardContent>
+
         <CardActions disableSpacing className={classes.CardActions}>
 
-          <IconButton aria-label='Add To Favorite' onClick={() => changeFavoriteStatus()}>
-            <StarBorderIcon />
+          {
+            isFavorite ?
+              (
+                <>
+                  <IconButton aria-label='Add To Favorite' onClick={() => changeFavoriteStatus()}>
+
+                    <StarIcon />
+
+                  </IconButton>
+                </>
+              )
+              :
+              (
+                <>
+                  <IconButton aria-label='Add To Favorite' onClick={() => changeFavoriteStatus()}>
+
+                    <StarBorderIcon />
+
+                  </IconButton>
+                </>
+              )
+          }
+
+          <IconButton aria-label='Information' onClick={() => goToMovieDetail()}>
+
+            <InfoIcon />
+
           </IconButton>
 
         </CardActions>
       </Card>
+
     </>
   )
 }

@@ -3,7 +3,7 @@ import CardComponent from '../../atoms/card/CardComponent'
 import SelectComponent from '../../atoms/select/SelectComponent'
 import { Grid } from '@material-ui/core'
 
-const MoviesList = ({ movieList, selectFilterChange }) => {
+const MoviesList = ({ movieList, selectFilterChange, filterFavorites }) => {
 
  
 
@@ -20,7 +20,7 @@ const MoviesList = ({ movieList, selectFilterChange }) => {
 
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
 
-            <CardComponent data={movie}  />
+            <CardComponent data={movie} filterFavorites = {filterFavorites}  />
             
           </Grid>
         )

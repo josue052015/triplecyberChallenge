@@ -1,0 +1,15 @@
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.csproj.AssemblyReference.cache
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.GeneratedMSBuildEditorConfig.editorconfig
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.AssemblyInfoInputs.cache
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.AssemblyInfo.cs
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.csproj.CoreCompileInputs.cache
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\bin\Debug\net6.0\coincidencias.exe
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\bin\Debug\net6.0\coincidencias.deps.json
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\bin\Debug\net6.0\coincidencias.runtimeconfig.json
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\bin\Debug\net6.0\coincidencias.dll
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\bin\Debug\net6.0\coincidencias.pdb
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.dll
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\refint\coincidencias.dll
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.pdb
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\coincidencias.genruntimeconfig.cache
+J:\challenges\triplecyberChallenge\prueba1\coincidencias\coincidencias\obj\Debug\net6.0\ref\coincidencias.dll

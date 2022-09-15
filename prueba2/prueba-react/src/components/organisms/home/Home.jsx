@@ -1,20 +1,43 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import MoviesList from '../../molecules/moviesList/MoviesList';
+import { CssBaseline } from '@mui/material';
 
-const Home = () => {
-
-  const [movies, setMovies] = useState();
-  const [moviesBackup, setMoviesBackup] = useState();
+const Home = ({movies, setMovies}) => {
 
   const selectValues = {
     allMovies: 10,
     favoriteMovies: 20
   }
 
+  
+  const [moviesBackup, setMoviesBackup] = useState();
+
+  let selectedValue = selectValues.allMovies;
+
+
+  const filterFavorites = (movie) => {
+
+    if (!movie.isFavorite) {
+
+      selectedValue = selectValues.favoriteMovies;
+      applyMoviesFilter();
+
+    }
+
+  }
+
   const selectFilterChange = (selectValue) => {
 
-    switch (selectValue) {
+    selectedValue = selectValue;
+
+    applyMoviesFilter();
+
+  }
+
+  const applyMoviesFilter = () => {
+
+    switch (selectedValue) {
 
       case selectValues.allMovies:
 
@@ -54,9 +77,12 @@ const Home = () => {
 
   return (
     <>
-      <MoviesList movieList={movies} selectFilterChange = {selectFilterChange} />
+
+        <MoviesList movieList={movies} selectFilterChange={selectFilterChange} filterFavorites={filterFavorites} />
+        
     </>
   )
+
 }
 
 export default Home
