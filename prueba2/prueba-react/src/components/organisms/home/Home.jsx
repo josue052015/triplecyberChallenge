@@ -12,30 +12,31 @@ const Home = ({movies, setMovies}) => {
 
   
   const [moviesBackup, setMoviesBackup] = useState();
+  const [currentSelectedValue, setCurrentSelectedValue] = useState();
 
-  let selectedValue = selectValues.allMovies;
+  //let selectedValue = selectValues.allMovies;
 
 
-  const filterFavorites = (movie) => {
+  const filterFavorites = (selectedValue) => {
 
-    if (!movie.isFavorite) {
+    console.log("selectedV",selectedValue)
 
-      selectedValue = selectValues.favoriteMovies;
-      applyMoviesFilter();
-
-    }
+    //  selectedValue = selectedValue;
+      applyMoviesFilter(currentSelectedValue);
 
   }
 
   const selectFilterChange = (selectValue) => {
 
-    selectedValue = selectValue;
+  //  currentSelectedValue = selectValue;
 
-    applyMoviesFilter();
+    applyMoviesFilter(selectValue);
 
   }
 
-  const applyMoviesFilter = () => {
+  const applyMoviesFilter = (selectedValue) => {
+
+    console.log("switch selected value", currentSelectedValue)
 
     switch (selectedValue) {
 
@@ -78,7 +79,7 @@ const Home = ({movies, setMovies}) => {
   return (
     <>
 
-        <MoviesList movieList={movies} selectFilterChange={selectFilterChange} filterFavorites={filterFavorites} />
+        <MoviesList movieList={movies} selectFilterChange={selectFilterChange} filterFavorites={filterFavorites} setCurrentSelectedValue = {setCurrentSelectedValue}/>
         
     </>
   )

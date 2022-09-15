@@ -1,30 +1,17 @@
 import React from 'react'
-import StarBorderIcon from '@mui/icons-material/StarBorder';
-import StarIcon from '@mui/icons-material/Star';
 import useStyles from './styles'
-import { useState } from 'react';
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Grid, Button } from '@material-ui/core';
 import { useNavigate } from "react-router-dom";
 
-const DetailCard = ({ data, changeFavoriteStatus, isFavoriteMovie }) => {
+const DetailCard = ({ data }) => {
 
     const classes = useStyles();
-
-    const [isFavorite, setIsFavorite] = useState(isFavoriteMovie);
 
     const navigate = useNavigate();
 
     const goToHome = () => {
 
         navigate("/")
-
-    }
-
-    const handleFavoriteChange = () => {
-
-        setIsFavorite(!isFavorite)
-
-        changeFavoriteStatus(data.id)
 
     }
 
@@ -63,28 +50,7 @@ const DetailCard = ({ data, changeFavoriteStatus, isFavoriteMovie }) => {
 
                             </div>
                         </CardContent>
-                        <CardActions disableSpacing className={classes.CardActions}>
-
-                            {
-                                isFavorite ?
-                                    (
-                                        <>
-                                            <IconButton aria-label='Favorite' onClick={() => handleFavoriteChange()}>
-                                                <StarIcon />
-                                            </IconButton>
-                                        </>
-                                    )
-                                    :
-                                    (
-                                        <>
-                                            <IconButton aria-label='Favorite' onClick={() => handleFavoriteChange()} >
-                                                <StarBorderIcon />
-                                            </IconButton>
-                                        </>
-                                    )
-                            }
-
-                        </CardActions>
+                       
                     </Card>
 
                 </Grid>

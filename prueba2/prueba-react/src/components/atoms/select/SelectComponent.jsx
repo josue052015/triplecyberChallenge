@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -6,20 +6,22 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 
-const SelectComponent = ({selectChanges, selectFilterChange}) => {
+const SelectComponent = ({selectChanges, selectFilterChange, setCurrentSelectedValue}) => {
 
 const selectValues = {
     allMovies: 10,
     favoriteMovies: 20
 }
 
-const [selectValue, setSelectValue] = useState(10)
+const [selectValue, setSelectValue] = useState(selectValues.allMovies)
 
     const handleSelectChange = (selectedValue) => {
 
         setSelectValue(selectedValue);
 
         selectFilterChange(selectedValue);
+
+        setCurrentSelectedValue(selectedValue)
 
     }
 

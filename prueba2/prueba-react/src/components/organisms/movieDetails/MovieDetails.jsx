@@ -4,23 +4,13 @@ import axios from 'axios';
 import DetailCard from '../../molecules/detailCard/DetailCard';
 
 
-const MovieDetails = ({ originalMoviesInformation}) => {
+const MovieDetails = () => {
 
   const navigate = useNavigate();
   const { movieId } = useParams()
-  const movieIndex = originalMoviesInformation.findIndex(x => x.id == movieId)
 
   const [movieInformation, setMovieInformation] = useState();
-  const [isFavorite, setIsFavorite] = useState(Boolean(originalMoviesInformation[movieIndex].isFavorite == true));
-
-    const changeFavoriteStatus = () => {
-  
-      if(movieIndex !== undefined) originalMoviesInformation[movieIndex].isFavorite = !(Boolean(originalMoviesInformation[movieIndex].isFavorite == true)) 
-  
-      setIsFavorite(originalMoviesInformation[movieIndex].isFavorite)
-
-    }
-  
+ 
 
   useEffect(() => {
 
@@ -38,10 +28,9 @@ const MovieDetails = ({ originalMoviesInformation}) => {
       {movieInformation &&
         (
           <>
-            <DetailCard data={movieInformation} changeFavoriteStatus = {changeFavoriteStatus} isFavoriteMovie = {isFavorite} />
+            <DetailCard data={movieInformation}  />
           </>
         )}
-
 
     </>
   )

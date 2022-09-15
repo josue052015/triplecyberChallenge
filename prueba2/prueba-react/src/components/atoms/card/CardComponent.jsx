@@ -7,17 +7,13 @@ import { useNavigate } from "react-router-dom";
 import InfoIcon from '@mui/icons-material/Info';
 
 
-const CardComponent = ({ data, filterFavorites }) => {
+const CardComponent = ({ data, filterFavorites, selectedValue }) => {
 
   const navigate = useNavigate();
 
   const classes = useStyles();
 
   const [isFavorite, setIsFavorite] = useState(data.isFavorite ? true : false);
-
-  /* const [, updateState] = React.useState();
-  const forceUpdate = React.useCallback(() => updateState({}), []); */
-
 
   const changeFavoriteStatus = () => {
 
@@ -27,9 +23,7 @@ const CardComponent = ({ data, filterFavorites }) => {
 
     setIsFavorite(!isFavorite)
 
-    filterFavorites(data)
-
-    // forceUpdate()
+    filterFavorites(selectedValue)
 
   }
 

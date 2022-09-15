@@ -22,7 +22,7 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Home movies = {movies} setMovies = {setMovies} />}></Route> 
-          <Route path='movieDetails/:movieId' element={<MovieDetails  originalMoviesInformation = {movies} />}></Route> 
+          <Route path='movieDetails/:movieId' element={<MovieDetails />}></Route> 
           
         </Routes>
       </Router>
